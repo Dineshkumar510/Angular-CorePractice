@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-xs-12">
+    <p>Add new Servers or blueprints!</p>
+    <label>Server Name</label>
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerName"> -->
+    <!--Local Reference-->
+    <input type="text" class="form-control" #inputserver>
+    <label>Server Content</label>
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerContent"> -->
+    <input type="text" class="form-control" #inputServerContent>
+    <br>
+    <button
+      class="btn btn-danger" style="margin-right: 5px;"
+      (click)="onAddServer(inputserver)">Red Server</button>
+    <button
+      class="btn btn-primary" style="background-color: blue;"
+      (click)="onAddBlueprint(inputserver)">Blue Server</button>
+  </div>
+</div>
